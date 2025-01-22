@@ -679,9 +679,11 @@
   }
   
   .client-card img {
-    height: 60px;
-    object-fit: contain;
+    height: 100px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
     margin-bottom: 1.5rem;
+    border-radius: 50%;
   }
   
   .rating {
