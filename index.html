@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime-Dev Technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+</head>
+<body class="light-mode">
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="company-name">{ Prime-Dev }</a>
+            <div class="nav-items">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#contact" class="nav-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="badge">Welcome to PrimeDev</div>
+                    <h1>Transform Your Ideas into Digital Reality</h1>
+                    <p>We specialize in custom website development, software solutions, and enterprise management services to help businesses thrive in the digital era.</p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="primary-button">Start Your Project</a>
+                        <a href="#services" class="secondary-button">Explore Services</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Expert Developers</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/17375328736807273878438539379454.jpg-XNGfquqsmcOAn2bwt4UYQX2b386Ta2.jpeg" alt="Digital transformation illustration" class="floating">
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Our Services</div>
+                    <h2>Comprehensive Digital Solutions</h2>
+                    <p>End-to-end services to transform your business digitally</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🌐</div>
+                        <h3>Website Development</h3>
+                        <p>Custom websites, e-commerce platforms, and content management systems tailored to your needs.</p>
+                        <a href="#contact" class="learn-more">Learn More →</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>Software Development</h3>
+                        <p>Custom software solutions, mobile apps, and cloud applications for various industries.</p>
+                        <a href="#contact" class="learn-more">Learn More →</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔄</div>
+                        <h3>Enterprise Management</h3>
+                        <p>Business process automation, CRM, and ERP systems to streamline your operations.</p>
+                        <a href="#contact" class="learn-more">Learn More →</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💡</div>
+                        <h3>Consulting & Training</h3>
+                        <p>Expert technology consulting and comprehensive team training programs.</p>
+                        <a href="#contact" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="badge">About Us</div>
+                        <h2>Driving Digital Innovation</h2>
+                        <p>At PrimeDev Technologies, we're passionate about helping businesses navigate the digital landscape. Our team of experts combines technical excellence with creative innovation to deliver solutions that drive real business value.</p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <div class="feature-icon">✓</div>
+                                <div class="feature-text">
+                                    <h4>Expert Team</h4>
+                                    <p>Skilled professionals with diverse expertise</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">✓</div>
+                                <div class="feature-text">
+                                    <h4>Custom Solutions</h4>
+                                    <p>Tailored to your specific needs</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">✓</div>
+                                <div class="feature-text">
+                                    <h4>24/7 Support</h4>
+                                    <p>Always here when you need us</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/17375328736807273878438539379454.jpg-XNGfquqsmcOAn2bwt4UYQX2b386Ta2.jpeg" alt="Our team" class="rounded-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="expertise" id="expertise">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Our Expertise</div>
+                    <h2>Technologies We Master</h2>
+                    <p>Cutting-edge technologies to power your digital success</p>
+                </div>
+                <div class="expertise-grid">
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.simpleicons.org/react" alt="React">
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <ul>
+                            <li>React.js</li>
+                            <li>Next.js</li>
+                            <li>Vue.js</li>
+                            <li>UI/UX Design</li>
+                        </ul>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.simpleicons.org/python" alt="Python">
+                        </div>
+                        <h3>Backend Development</h3>
+                        <ul>
+                            <li>Python/Django</li>
+                            <li>Node.js</li>
+                            <li>PHP/Laravel</li>
+                            <li>Database Design</li>
+                        </ul>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.simpleicons.org/android" alt="Mobile">
+                        </div>
+                        <h3>Mobile Development</h3>
+                        <ul>
+                            <li>React Native</li>
+                            <li>Flutter</li>
+                            <li>iOS/Swift</li>
+                            <li>Android/Kotlin</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge"><i class="fas fa-trophy"></i> Our Success Stories</div>
+                    <h2>Featured Projects</h2>
+                    <p>Discover some of our most impactful digital solutions</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://img.freepik.com/free-vector/shopping-online-landing-page-design_23-2148535767.jpg?t=st=1737569975~exp=1737573575~hmac=b85ee32d6c91b195aaa4ba08fde9d54ec8ae6b68963b0ddbfc84170ea583b76f&w=826" alt="E-commerce Platform">
+                            <div class="project-overlay">
+                                <a href="#" class="view-project">View Project <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce Platform</h3>
+                            <p>A full-featured online shopping platform with real-time inventory management</p>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://img.freepik.com/free-vector/doctors-personalized-prescriptive-analytics_335657-1882.jpg?t=st=1737570036~exp=1737573636~hmac=7e4a61594d309df9a11b2a23f8091dd0c7877c29c1133c90a153b1e79d624bc5&w=826" alt="Healthcare App">
+                            <div class="project-overlay">
+                                <a href="#" class="view-project">View Project <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Healthcare Management System</h3>
+                            <p>Integrated healthcare solution for patient management and scheduling</p>
+                            <div class="tech-stack">
+                                <span>Angular</span>
+                                <span>Python</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://img.freepik.com/free-vector/workout-tracker-app_23-2148677118.jpg?t=st=1737570078~exp=1737573678~hmac=bb5da3e675eee4189fe42ea341d2210680337ac89ef2d522590df2ba25b869aa&w=826" alt="Mobile App">
+                            <div class="project-overlay">
+                                <a href="#" class="view-project">View Project <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Fitness Tracking App</h3>
+                            <p>Cross-platform mobile app for fitness tracking and meal planning</p>
+                            <div class="tech-stack">
+                                <span>React Native</span>
+                                <span>Firebase</span>
+                                <span>Redux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="clients">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge"><i class="fas fa-handshake"></i> Our Clients</div>
+                    <h2>Trusted by Industry Leaders</h2>
+                    <p>Join our growing list of satisfied clients</p>
+                </div>
+                <div class="clients-grid">
+                    <div class="client-card">
+                        <img src="https://img.freepik.com/premium-photo/handsome-isolated-wall-with-fingers-crossing_1368-36995.jpg?w=826" alt="Client Logo 1">
+                        <div class="client-content">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Prime-Dev delivered exceptional results. Their team's expertise and dedication made our project a success."</p>
+                            <div class="client-info">
+                                <h4>John Smith</h4>
+                                <span>CEO, Tech Solutions Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <img src="https://img.freepik.com/free-photo/vertical-shot-happy-dark-skinned-female-with-curly-hair_273609-15519.jpg?t=st=1737570221~exp=1737573821~hmac=dd2e7d3e9fd2ba78db74ebdf6b16901c83ffe6781e5b63ebbc6385f2417defe7&w=740" alt="Client Logo 2">
+                        <div class="client-content">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Outstanding service and technical expertise. They transformed our business processes completely."</p>
+                            <div class="client-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>CTO, Innovation Labs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <img src="https://img.freepik.com/free-vector/minimalist-geometric-judith-s-tiktok-profile-picture_742173-12131.jpg?t=st=1737358189~exp=1737361789~hmac=b08ebf811ee8fe8549b54dccd135c9912c3ac306c621ba50081afe71affc973f&w=740" alt="Client Logo 3">
+                        <div class="client-content">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>"Professional team that delivers on time and exceeds expectations. Highly recommended!"</p>
+                            <div class="client-info">
+                                <h4>Michael Brown</h4>
+                                <span>Director, Global Enterprises</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="team" id="team">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge"><i class="fas fa-users"></i> Our Team</div>
+                    <h2>Meet Our Experts</h2>
+                    <p>The talented people behind our success</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://img.freepik.com/free-vector/minimalist-geometric-judith-s-tiktok-profile-picture_742173-12131.jpg?t=st=1737358189~exp=1737361789~hmac=b08ebf811ee8fe8549b54dccd135c9912c3ac306c621ba50081afe71affc973f&w=740" alt="Team Member 1">
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Alex Thompson</h3>
+                            <span>Lead Developer</span>
+                            <p>10+ years of experience in full-stack development</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://img.freepik.com/premium-photo/smiling-confident-bearded-indian-man-standing-isolated-yellow-background_562687-3197.jpg?w=826" alt="Team Member 2">
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Emily Chen</h3>
+                            <span>UX Designer</span>
+                            <p>Expert in creating intuitive user experiences</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://img.freepik.com/premium-photo/arabian-handsome-man-isolated-holding-copy-space-imaginary-palm-insert-ad-with-thumbs-up_1368-126006.jpg?w=826" alt="Team Member 3">
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>David Miller</h3>
+                            <span>Project Manager</span>
+                            <p>Certified PMP with agile methodology expertise</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://img.freepik.com/premium-photo/handsome-man-isolated-wall-keeping-arms-crossed-frontal-position_1368-93851.jpg?w=826" alt="Team Member 4">
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Sofia Rodriguez</h3>
+                            <span>Backend Developer</span>
+                            <p>Specialized in scalable cloud architecture</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Transform Your Business?</h2>
+                    <p>Let's discuss how we can help you achieve your digital goals</p>
+                    <a href="#contact" class="primary-button">Start a Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Contact Us</div>
+                    <h2>Get in Touch</h2>
+                    <p>Let's discuss your project and how we can help</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <h3>Visit Us</h3>
+                            <p>123 Tech Street, Digital Valley</p>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">📧</div>
+                            <h3>Email Us</h3>
+                            <p>hello@primedev.tech</p>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">📱</div>
+                            <h3>Call Us</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder=" " required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder=" " required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder=" " required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="primary-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">PD</div>
+                        PrimeDev
+                    </a>
+                    <p>Driving digital transformation through innovative solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#expertise">Expertise</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a href="#services">Website Development</a>
+                    <a href="#services">Software Development</a>
+                    <a href="#services">Enterprise Management</a>
+                    <a href="#services">Consulting</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PrimeDev Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
