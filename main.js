@@ -1,7 +1,7 @@
 // Initialize GSAP
 gsap.registerPlugin(ScrollTrigger)
 
-// Theme Toggle with fixed icon visibility
+// Theme Toggle
 const themeToggle = document.getElementById("theme-toggle")
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)")
 
@@ -13,31 +13,17 @@ if (prefersDarkScheme.matches) {
 }
 
 themeToggle.addEventListener("click", () => {
-  if (document.body.classList.contains("light-mode")) {
-    document.body.classList.remove("light-mode")
-    document.body.classList.add("dark-mode")
-  } else {
-    document.body.classList.remove("dark-mode")
-    document.body.classList.add("light-mode")
-  }
+  document.body.classList.toggle("dark-mode")
+  document.body.classList.toggle("light-mode")
 })
 
-// Mobile Menu Toggle with improved functionality
+// Mobile Menu Toggle
 const mobileMenuBtn = document.querySelector(".mobile-menu-btn")
 const navItems = document.querySelector(".nav-items")
 
 mobileMenuBtn.addEventListener("click", () => {
   navItems.classList.toggle("active")
   mobileMenuBtn.classList.toggle("active")
-  // Toggle icon
-  const icon = mobileMenuBtn.querySelector("i")
-  if (navItems.classList.contains("active")) {
-    icon.classList.remove("fa-bars")
-    icon.classList.add("fa-times")
-  } else {
-    icon.classList.remove("fa-times")
-    icon.classList.add("fa-bars")
-  }
 })
 
 // Close mobile menu when clicking outside
@@ -45,9 +31,6 @@ document.addEventListener("click", (e) => {
   if (!e.target.closest(".mobile-menu-btn") && !e.target.closest(".nav-items")) {
     navItems.classList.remove("active")
     mobileMenuBtn.classList.remove("active")
-    const icon = mobileMenuBtn.querySelector("i")
-    icon.classList.remove("fa-times")
-    icon.classList.add("fa-bars")
   }
 })
 
@@ -56,9 +39,6 @@ navItems.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
     navItems.classList.remove("active")
     mobileMenuBtn.classList.remove("active")
-    const icon = mobileMenuBtn.querySelector("i")
-    icon.classList.remove("fa-times")
-    icon.classList.add("fa-bars")
   })
 })
 
@@ -67,9 +47,6 @@ window.addEventListener("resize", () => {
   if (window.innerWidth > 768) {
     navItems.classList.remove("active")
     mobileMenuBtn.classList.remove("active")
-    const icon = mobileMenuBtn.querySelector("i")
-    icon.classList.remove("fa-times")
-    icon.classList.add("fa-bars")
   }
 })
 
@@ -274,5 +251,70 @@ gsap.utils.toArray(".rating").forEach((rating) => {
     stagger: 0.1,
     ease: "back.out(1.7)",
   })
+})
+
+// Modal functionality
+const modalOverlay = document.querySelector(".modal-overlay")
+const modalClose = document.querySelector(".modal-close")
+const contactButtons = document.querySelectorAll('a[href="#contact"]')
+
+contactButtons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    e.preventDefault()
+    modalOverlay.classList.add("active")
+    document.body.style.overflow = "hidden"
+  })
+})
+
+modalClose.addEventListener("click", () => {
+  modalOverlay.classList.remove("active")
+  document.body.style.overflow = ""
+})
+
+modalOverlay.addEventListener("click", (e) => {
+  if (e.target === modalOverlay) {
+    modalOverlay.classList.remove("active")
+    document.body.style.overflow = ""
+  }
+})
+
+// Close modal on escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && modalOverlay.classList.contains("active")) {
+    modalOverlay.classList.remove("active")
+    document.body.style.overflow = ""
+  }
+})
+
+// Handle modal form submission
+const modalForm = modalOverlay.querySelector(".contact-form")
+modalForm.addEventListener("submit", (e) => {
+  e.preventDefault()
+
+  // Get form values
+  const name = document.getElementById("modal-name").value
+  const email = document.getElementById("modal-email").value
+  const mobile = document.getElementById("modal-mobile").value
+  const message = document.getElementById("modal-message").value
+
+  // Basic validation
+  if (!name || !email || !message) {
+    alert("Please fill in all required fields")
+    return
+  }
+
+  // Email validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  if (!emailRegex.test(email)) {
+    alert("Please enter a valid email address")
+    return
+  }
+
+  // Here you would typically send the form data to your server
+  console.log("Form submitted:", { name, email, mobile, message })
+  alert("Thank you for your message! We will get back to you soon.")
+  modalForm.reset()
+  modalOverlay.classList.remove("active")
+  document.body.style.overflow = ""
 })
 
