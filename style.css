@@ -672,9 +672,11 @@ body {
 }
 
 .client-card img {
-  height: 60px;
-  object-fit: contain;
+  height: 100px;
+  object-fit: cover;
   margin-bottom: 1.5rem;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
 }
 
 .rating {
