@@ -225,6 +225,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
+
 .section-header .badge i {
   margin-right: 0.5rem;
 }
@@ -366,6 +367,7 @@ body {
 .service-icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: var(--primary);
 }
 
 .service-card h3 {
@@ -643,7 +645,8 @@ body {
 }
 
 .cta-content .primary-button:hover {
-  background: var(--background);
+  background: var(--primary-dark);
+  color: white;
   transform: translateY(-2px);
 }
 
@@ -732,6 +735,7 @@ body {
 .info-icon {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: var(--primary);
 }
 
 .info-item h3 {
