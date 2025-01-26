@@ -2,20 +2,27 @@
 gsap.registerPlugin(ScrollTrigger)
 
 // Theme Toggle
-const themeToggle = document.getElementById("theme-toggle")
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)")
+const themeSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
 
-// Set initial theme based on system preference
-if (prefersDarkScheme.matches) {
-  document.body.classList.add("dark-mode")
-} else {
-  document.body.classList.add("light-mode")
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    if (currentTheme === 'dark') {
+        themeSwitch.checked = true;
+    }
 }
 
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode")
-  document.body.classList.toggle("light-mode")
-})
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    }    
+}
+
+themeSwitch.addEventListener('change', switchTheme, false);
 
 // Mobile Menu Toggle
 const mobileMenuBtn = document.querySelector(".mobile-menu-btn")
@@ -317,4 +324,3 @@ modalForm.addEventListener("submit", (e) => {
   modalOverlay.classList.remove("active")
   document.body.style.overflow = ""
 })
-
