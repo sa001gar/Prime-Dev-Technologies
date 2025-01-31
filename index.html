@@ -1,15 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="Prime Dev Technologies Pvt. Ltd. is a leading technology company offering custom software development, AI solutions, web & mobile apps, cloud services, and UI/UX design. Innovate with us today."
+    />
+
+    <!-- Keywords -->
+    <meta
+      name="keywords"
+      content="Prime Dev Technologies, custom software development, AI solutions, web development, mobile app development, cloud services, UI/UX design, technology company, innovative technology, IT services, scalable tech solutions, IT development company"
+    />
+
+    <!-- Author -->
+    <meta name="author" content="Prime Dev Technologies Pvt. Ltd." />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Open Graph Tags (For Social Sharing) -->
+    <meta
+      property="og:title"
+      content="Prime Dev Technologies Pvt. Ltd. - Your Vision, Our Innovation.."
+    />
+    <meta
+      property="og:description"
+      content="Empowering businesses with cutting-edge technology solutions like AI, cloud services, and app development. Transform your vision with Prime Dev Technologies."
+    />
+    <meta property="og:image" content="https://primedev.sagarkundu.live/logo.png" />
+    <!-- Replace with your logo link -->
+    <meta property="og:url" content="https://primedev.sagarkundu.live" />
+    <!-- Replace with your website URL -->
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Prime Dev Technologies Pvt. Ltd." />
+    <meta
+      name="twitter:description"
+      content="Explore innovative technology solutions at Prime Dev Technologies. We deliver software, apps, AI, and cloud solutions tailored to your needs."
+    />
+    <meta name="twitter:image" content="https://primedev.sagarkundu.live/logo.png" />
+    <!-- Replace with your logo link -->
+
     <title>Prime-Dev Technologies</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Prime Dev Technologies Pvt. Ltd.",
+          "url": "https://primedev.sagarkundu.live",
+          "logo": "https://primedev.sagarkundu.live/logo.png",
+          "sameAs": [
+            "https://www.linkedin.com/company/prime-dev-technologies-pvt-ltd",
+            "https://twitter.com/prime-dev-technologies-pvt-ltd",
+            "https://www.facebook.com/prime-dev-technologies-pvt-ltd"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91 7699876839",
+            "contactType": "Customer Support"
+          }
+        }
+        </script>
+        
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
-</head>
-<body class="light-mode">
+  </head>
+  <body class="light-mode">
     <nav class="navbar">
         <div class="container">
             <a href="#" class="company-name">{ Prime-Dev }</a>
@@ -19,14 +90,11 @@
                 <a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
                 <a href="#team"><i class="fas fa-users"></i> Team</a>
                 <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-                <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round">
-                    <i class="fas fa-sun"></i>
-                    <i class="fas fa-moon"></i>
-                </div>
-                </label>
-                <!-- <a href="#contact" class="nav-cta">Get Started <i class="fas fa-arrow-right"></i></a> -->
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+                <a href="#contact" class="nav-cta">Get Started <i class="fas fa-arrow-right"></i></a>
             </div>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <span></span>
@@ -36,12 +104,11 @@
         </div>
     </nav>
 
-
     <main>
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <!-- <div class="badge">Welcome to PrimeDev</div> -->
+                    <div class="badge">Welcome to PrimeDev</div>
                     <h1>Transform Your Ideas into Digital Reality</h1>
                     <p>We specialize in custom website development, software solutions, and enterprise management services to help businesses thrive in the digital era.</p>
                     <div class="hero-cta">
@@ -69,127 +136,156 @@
             </div>
         </section>
 
-        <section class="services" id="services">
-            <div class="container">
-                <div class="section-header">
-                    <div class="badge">Our Services</div>
-                    <h2>Comprehensive Digital Solutions</h2>
-                    <p>End-to-end services to transform your business digitally</p>
-                </div>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fa-brands fa-chrome"></i></div>
-                        <h3>Website Development</h3>
-                        <p>Custom websites, e-commerce platforms, and content management systems tailored to your needs.</p>
-                        <a href="#contact" class="learn-more">Learn More →</a>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
-                        <h3>Software Development</h3>
-                        <p>Custom software solutions, web apps, and cloud applications for various industries.</p>
-                        <a href="#contact" class="learn-more">Learn More →</a>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fa-solid fa-chart-simple"></i></div>
-                        <h3>Enterprise Management</h3>
-                        <p>Business process automation, CRM, and ERP systems to streamline your operations.</p>
-                        <a href="#contact" class="learn-more">Learn More →</a>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
-                        <h3>Consulting & Training</h3>
-                        <p>Expert technology consulting and comprehensive team training programs.</p>
-                        <a href="#contact" class="learn-more">Learn More →</a>
-                    </div>
-                </div>
+      <section class="services" id="services">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge">Our Services</div>
+            <h2>Comprehensive Digital Solutions</h2>
+            <p>End-to-end services to transform your business digitally</p>
+          </div>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa-brands fa-chrome"></i>
+              </div>
+              <h3>Website Development</h3>
+              <p>
+                Custom websites, e-commerce platforms, and content management
+                systems tailored to your needs.
+              </p>
+              <a href="#contact" class="learn-more">Learn More →</a>
             </div>
-        </section>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h3>Software Development</h3>
+              <p>
+                Custom software solutions, web apps, and cloud applications for
+                various industries.
+              </p>
+              <a href="#contact" class="learn-more">Learn More →</a>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa-solid fa-chart-simple"></i>
+              </div>
+              <h3>Enterprise Management</h3>
+              <p>
+                Business process automation, CRM, and ERP systems to streamline
+                your operations.
+              </p>
+              <a href="#contact" class="learn-more">Learn More →</a>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+              <h3>Consulting & Training</h3>
+              <p>
+                Expert technology consulting and comprehensive team training
+                programs.
+              </p>
+              <a href="#contact" class="learn-more">Learn More →</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="about" id="about">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <div class="badge">About Us</div>
-                        <h2>Driving Digital Innovation</h2>
-                        <p>At PrimeDev Technologies, we're passionate about helping businesses navigate the digital landscape. Our team of experts combines technical excellence with creative innovation to deliver solutions that drive real business value.</p>
-                        <div class="about-features">
-                            <div class="feature">
-                                <div class="feature-icon">✓</div>
-                                <div class="feature-text">
-                                    <h4>Expert Team</h4>
-                                    <p>Skilled professionals with diverse expertise</p>
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <div class="feature-icon">✓</div>
-                                <div class="feature-text">
-                                    <h4>Custom Solutions</h4>
-                                    <p>Tailored to your specific needs</p>
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <div class="feature-icon">✓</div>
-                                <div class="feature-text">
-                                    <h4>24/7 Support</h4>
-                                    <p>Always here when you need us</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-image">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/17375328736807273878438539379454.jpg-XNGfquqsmcOAn2bwt4UYQX2b386Ta2.jpeg" alt="Our team" class="rounded-image">
-                    </div>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <div class="badge">About Us</div>
+              <h2>Driving Digital Innovation</h2>
+              <p>
+                At PrimeDev Technologies, we're passionate about helping
+                businesses navigate the digital landscape. Our team of experts
+                combines technical excellence with creative innovation to
+                deliver solutions that drive real business value.
+              </p>
+              <div class="about-features">
+                <div class="feature">
+                  <div class="feature-icon">✓</div>
+                  <div class="feature-text">
+                    <h4>Expert Team</h4>
+                    <p>Skilled professionals with diverse expertise</p>
+                  </div>
                 </div>
+                <div class="feature">
+                  <div class="feature-icon">✓</div>
+                  <div class="feature-text">
+                    <h4>Custom Solutions</h4>
+                    <p>Tailored to your specific needs</p>
+                  </div>
+                </div>
+                <div class="feature">
+                  <div class="feature-icon">✓</div>
+                  <div class="feature-text">
+                    <h4>24/7 Support</h4>
+                    <p>Always here when you need us</p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+            <div class="about-image">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/17375328736807273878438539379454.jpg-XNGfquqsmcOAn2bwt4UYQX2b386Ta2.jpeg"
+                alt="Our team"
+                class="rounded-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="expertise" id="expertise">
-            <div class="container">
-                <div class="section-header">
-                    <div class="badge">Our Expertise</div>
-                    <h2>Technologies We Master</h2>
-                    <p>Cutting-edge technologies to power your digital success</p>
-                </div>
-                <div class="expertise-grid">
-                    <div class="expertise-card">
-                        <div class="expertise-icon">
-                            <img src="https://cdn.simpleicons.org/react" alt="React">
-                        </div>
-                        <h3>Frontend Development</h3>
-                        <ul>
-                            <li>Html</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>UI/UX Design</li>
-                        </ul>
-                    </div>
-                    <div class="expertise-card">
-                        <div class="expertise-icon">
-                            <img src="https://cdn.simpleicons.org/python" alt="Python">
-                        </div>
-                        <h3>Backend Development</h3>
-                        <ul>
-                            <li>Python/Django</li>
-                            <li>Node.js</li>
-                            <li>PHP</li>
-                            <li>Database Design</li>
-                        </ul>
-                    </div>
-                    <div class="expertise-card">
-                        <div class="expertise-icon">
-                            <img src="https://cdn.simpleicons.org/android" alt="Mobile">
-                        </div>
-                        <h3>Frameworks</h3>
-                        <ul>
-                            <li>Django</li>
-                            <li>Flutter</li>
-                            <li>iOS/Swift</li>
-                            <li>Android/Kotlin</li>
-                        </ul>
-                    </div>
-                </div>
+      <section class="expertise" id="expertise">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge">Our Expertise</div>
+            <h2>Technologies We Master</h2>
+            <p>Cutting-edge technologies to power your digital success</p>
+          </div>
+          <div class="expertise-grid">
+            <div class="expertise-card">
+              <div class="expertise-icon">
+                <img src="https://cdn.simpleicons.org/react" alt="React" />
+              </div>
+              <h3>Frontend Development</h3>
+              <ul>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>UI/UX Design</li>
+              </ul>
             </div>
-        </section>
+            <div class="expertise-card">
+              <div class="expertise-icon">
+                <img src="https://cdn.simpleicons.org/python" alt="Python" />
+              </div>
+              <h3>Backend Development</h3>
+              <ul>
+                <li>Python/Django</li>
+                <li>Node.js</li>
+                <li>PHP</li>
+                <li>Database Design</li>
+              </ul>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon">
+                <img src="https://cdn.simpleicons.org/android" alt="Mobile" />
+              </div>
+              <h3>Frameworks</h3>
+              <ul>
+                <li>Django</li>
+                <li>Flutter</li>
+                <li>iOS/Swift</li>
+                <li>Android/Kotlin</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
         <section class="projects" id="projects">
             <div class="container">
@@ -203,7 +299,7 @@
                         <div class="project-image">
                             <img src="media/work/redesign.png" alt="E-commerce Platform">
                             <div class="project-overlay">
-                                <a href="https://redesign-mccs.sagarkundu.live/" class="view-project">View Project <i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="view-project">View Project <i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                         <div class="project-content">
@@ -331,9 +427,9 @@
                         <div class="member-image">
                             <img src="media/team/mainak_majumder.png" alt="Team Member 1">
                             <div class="member-social">
-                                <a href="https://www.linkedin.com/in/mainak-majumder-433b60214/"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://x.com/Mainak1610"><i class="fab fa-twitter"></i></a>
-                                <a href="https://github.com/mainak1023"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                         <div class="member-info">
@@ -392,15 +488,15 @@
         </section>
 
 
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content">
-                    <h2>Ready to Transform Your Business?</h2>
-                    <p>Let's discuss how we can help you achieve your digital goals</p>
-                    <a href="#contact" class="primary-button">Start a Project</a>
-                </div>
-            </div>
-        </section>
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-content">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>Let's discuss how we can help you achieve your digital goals</p>
+            <a href="#contact" class="primary-button">Start a Project</a>
+          </div>
+        </div>
+      </section>
 
         <section class="contact" id="contact">
             <div class="container">
@@ -419,7 +515,7 @@
                         <div class="info-item">
                             <div class="info-icon"><i class="fa-solid fa-envelopes-bulk"></i></div>
                             <h3>Email Us</h3>
-                            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="650d0009090a2515170c08000100134b1100060d">[email&#160;protected]</a></p>
+                            <p>hello@primedev.tech</p>
                         </div>
                         <div class="info-item">
                             <div class="info-icon"><i class="fa-solid fa-headset"></i></div>
@@ -442,103 +538,107 @@
                             <label for="mobile_no">Mobile No</label>
                         </div>
 
-                        <div class="form-group">
-                            <textarea id="message" placeholder=" " required></textarea>
-                            <label for="message">Message</label>
-                        </div>
-                        <button type="submit" class="primary-button">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-
-    <!-- Modal StartProject -->
-    <div class="modal-overlay">
-        <div class="modal">
-            <button class="modal-close">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="section-header">
-                <h2>Contact Us</h2>
-                <p>We'll get back to you as soon as possible</p>
-            </div>
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" id="modal-name" placeholder=" " required>
-                    <label for="modal-name">Name</label>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="modal-email" placeholder=" " required>
-                    <label for="modal-email">Email</label>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="modal-mobile" placeholder=" " >
-                    <label for="modal-mobile">Mobile No</label>
-                </div>
-                <div class="form-group">
-                    <textarea id="modal-message" placeholder=" " required></textarea>
-                    <label for="modal-message">Message</label>
-                </div>
-                <button type="submit" class="primary-button">Send Message</button>
+              <div class="form-group">
+                <textarea id="message" placeholder=" " required></textarea>
+                <label for="message">Message</label>
+              </div>
+              <button type="submit" class="primary-button">Send Message</button>
             </form>
+          </div>
         </div>
-    </div>
+      </section>
 
-
+      <!-- Modal StartProject -->
+      <div class="modal-overlay">
+        <div class="modal">
+          <button class="modal-close">
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="section-header">
+            <h2>Contact Us</h2>
+            <p>We'll get back to you as soon as possible</p>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" id="modal-name" placeholder=" " required />
+              <label for="modal-name">Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="modal-email" placeholder=" " required />
+              <label for="modal-email">Email</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="modal-mobile" placeholder=" " />
+              <label for="modal-mobile">Mobile No</label>
+            </div>
+            <div class="form-group">
+              <textarea id="modal-message" placeholder=" " required></textarea>
+              <label for="modal-message">Message</label>
+            </div>
+            <button type="submit" class="primary-button">Send Message</button>
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <a href="#" class="logo">
-                        { Prime-Dev }
-                    </a>
-                    <p>Driving digital transformation through innovative solutions.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <a href="#services">Services</a>
-                    <a href="#about">About</a>
-                    <a href="#expertise">Expertise</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-section">
-                    <h3>Services</h3>
-                    <a href="#services">Website Development</a>
-                    <a href="#services">Software Development</a>
-                    <a href="#services">Enterprise Management</a>
-                    <a href="#services">Consulting</a>
-                </div>
-                <div class="footer-section">
-                    <h3>Connect</h3>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <a href="#" class="logo"> { Prime-Dev } </a>
+            <p>Driving digital transformation through innovative solutions.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-section">
+            <h3>Services</h3>
+            <a href="#services">Website Development</a>
+            <a href="#services">Software Development</a>
+            <a href="#services">Enterprise Management</a>
+            <a href="#services">Consulting</a>
+          </div>
+          <div class="footer-section">
+            <h3>Connect</h3>
 
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/company/prime-dev-technologies-pvt-ltd" aria-label="LinkedIn">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="GitHub">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Twitter">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/company/prime-dev-technologies-pvt-ltd"
+                aria-label="LinkedIn"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                  />
+                </svg>
+              </a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 PrimeDev Technologies. All rights reserved.</p>
-            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 PrimeDev Technologies. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
